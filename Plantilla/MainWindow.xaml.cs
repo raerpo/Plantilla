@@ -36,6 +36,7 @@ namespace Plantilla
             miKinect.DepthFrameReady += new EventHandler<DepthImageFrameReadyEventArgs>(miKinect_DepthFrameReady);
             miKinect.SkeletonFrameReady += new EventHandler<SkeletonFrameReadyEventArgs>(miKinect_SkeletonFrameReady);
 
+            miKinect.Start();
         }
 
         void miKinect_SkeletonFrameReady(object sender, SkeletonFrameReadyEventArgs e)
